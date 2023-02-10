@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title> IDOWU OLUWATOBI DAMILOLA - &nbsp;UI / UX DESIGNER | WEB DESIGNER </title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./custom.css">
+    <!-- ======== cudtom plugin ====== -->
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carter+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./saas/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <style>
+    .nav-resume{ position: relative; left: 27%;}
+    .more-update,.moreupdate{ text-align: left; color: #4aaff9;}
+    .designtoolinfo {
+      text-align: left;
+    }
+
+/* ===== Desktop views ===== */
+
+  ul.stark-menu {
+    padding-left: 0%;
+    text-align: center;
+  } 
+
+  .connect_with_me h4 {
+    text-align: center;
+    font-weight: 900;
+    color: #000;
+}
+
+/* ====== End Destop views ===== */
+
+
+
+  </style>
+
+  <style>
+    
+  .login-popup{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1099;
+      /* background-color: #151515a6; */
+      background-color: rgba(0,0,0,0.6);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease;
+  }
+  .login-popup.show{
+    visibility:visible;
+    opacity: 1;
+  }
+  .login-popup .box{
+      background-color: transparent;
+      width: 500px;
+      position: absolute;
+      left: 29%;
+      top: 15%;
+      /* transform: translate(-50%,-50%); */
+      display: flex;
+      flex-wrap: wrap;
+      opacity: 0;
+      padding: 12px 15px 12px 9px;
+      margin-left: 50px;
+      border-radius: 3px;
+      /* transition: all 1s ease; */
+  
+  }
+  
+  .login-popup.show .box{
+    opacity: 1;
+    margin-left: 0;
+  }
+  .login-popup .box .img-area{
+    flex:0 0 50%;
+    max-width: 50%;
+    position: relative;
+    overflow: hidden;
+    padding:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .login-popup .box .img-area h1{
+    font-size: 30px;
+  }
+  .login-popup .box .img-area .img{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: zoomInOut 7s linear infinite;
+    z-index: -1;
+  
+  }
+  @keyframes zoomInOut{
+    0%,100%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.1);
+    }
+  }
+  .login-popup .box .form{
+    flex:0 0 50%;
+    max-width: 50%;
+    padding:40px 30px;
+  }
+  
+  .login-popup .box .form h1{
+    color:#000000;
+    font-size: 30px;
+    margin:0 0 30px;
+  }
+  .login-popup .box .form .form-control{
+    height: 45px;
+    margin-bottom: 30px;
+    width: 100%;
+    border:none;
+    border-bottom:1px solid #cccccc;
+    font-size: 15px;
+    color:#000000;
+  }
+  .login-popup .box .form .form-control:focus{
+    outline: none;
+  }
+  .login-popup .box .form label{
+    font-size: 15px;
+    color:#555555;
+  }
+  .login-popup .box .form .bton{
+    width: 100%;
+    background-color: #E91E63;
+    margin-top:40px;
+    height: 45px;
+    border:none;
+    border-radius: 25px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color:#ffffff;
+    cursor: pointer;
+  }
+  .login-popup .box .form .bton:focus{
+    outline: none;
+  }
+  
+
+
+  .social_connect_container {
+
+text-align: center;
+
+}
+
+ul.social-menu {
+
+padding-left: 0%;
+text-align: center;
+
+}
+
+ul.social-menu > li {
+
+display: inline-block;
+padding: 10px 20px;
+
+}
+
+
+
+  
+.carder-info {
+        
+        width: 103%!important;
+        left: -2px;
+        top: -75px;
+        height: 530px;
+    }
+
+
+    .btn-closed {
+
+        padding: 0px 6px 1px 6px;
+        border-radius: 100px;
+        position: relative;
+        top: -73px!important;
+        left: 10px!important;
+        background-color: #7c7c7c;
+        margin-bottom: 5px;
+
+    }
+
+    .skill-info {
+
+      font-weight: 400;
+      font-size: 15px;
+      color: #000;
+
+    }
+
+    .Starks h6{
+
+        text-align: left;
+        font-weight: 900;
+        color: #000;
+        padding-left: 40px;
+    }
+
+    .connect_with_me h4 {
+
+      text-align: center;
+      font-weight: 900;
+      color: #000;
+    }
+
+    .social_connect_container {
+
+      text-align: center;
+      
+    }
+
+
+    ul.stark-menu {
+
+      padding-left: 0%;
+      text-align: center;
+
+    }
+
+    ul.stark-menu > li {
+
+      display: inline-block;
+      padding: 10px 10px;
+
+    }
+
+
+/* ================= */
+
+    ul.social-menu {
+
+      padding-left: 0%;
+      text-align: center;
+      
+    }
+
+    ul.social-menu > li {
+
+      display: inline-block;
+      padding: 10px 20px;
+
+    }
+
+    
+  @media only screen and (max-width: 480px){
+  
+      .login-popup .box {
+          top: 20%;
+          max-width: 100%;
+          left: 0%!important;
+      }
+
+      
+    .carder-info {
+        
+        width: 103%!important;
+        left: -2px;
+        top: -75px;
+        height: 530px;
+    }
+
+
+    .btn-closed {
+
+        padding: 0px 6px 1px 6px;
+        border-radius: 100px;
+        position: relative;
+        top: -73px!important;
+        left: 10px!important;
+        background-color: #7c7c7c;
+        margin-bottom: 5px;
+
+    }
+
+    .skill-info {
+
+      font-weight: 400;
+      font-size: 15px;
+      color: #000;
+
+    }
+
+    .Starks h6{
+
+        text-align: left;
+        font-weight: 900;
+        color: #000;
+        padding-left: 40px;
+    }
+
+    .connect_with_me h4 {
+
+      text-align: center;
+      font-weight: 900;
+      color: #000;
+    }
+
+    .social_connect_container {
+
+      text-align: center;
+      
+    }
+
+
+    ul.stark-menu {
+
+      padding-left: 0%;
+      text-align: center;
+
+    }
+
+    ul.stark-menu > li {
+
+      display: inline-block;
+      padding: 10px 10px;
+
+    }
+
+
+/* ================= */
+
+    ul.social-menu {
+
+      padding-left: 0%;
+      text-align: center;
+      
+    }
+
+    ul.social-menu > li {
+
+      display: inline-block;
+      padding: 10px 20px;
+
+    }
+
+    
+  
+  }
+
+  </style>
+  <body id="home">
+    <!--Header-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar">
+            <div class="container">
+              <!-- <a href="index.html" class="nav-branding"> <span style="color:#381fff;">i <span style="color:#000;">T_daconcept</span></a> -->
+              <a class="logotext navbar-brand font-weight-bolder title" href="index.html">
+                <span style="color:#381fff;">i <span style="color:#000;">T_daconcept</span>
+              </a>
+
+              <ul class="nav-menu">
+                  <li class="nav-item"> 
+                      <a  href="#services" class="nav-link">PORTFOLIO</a>
+                  </li>
+
+                  <li class="nav-item"> 
+                      <a href="#about" class="nav-link">ABOUT</a>
+                  </li>
+
+                  <li class="nav-item"> 
+                      <a href="#hire" class="nav-link">HIRE ME</a>
+                  </li>
+
+                  <li class="nav-item"> 
+                    <a  href="#contactus" class="nav-link">CONTACT ME</a>
+                  </li>
+
+                  <ul class="navbar-nav nav-flex-icons nav-resume">
+                    <li class="nav-item ml-3">
+                      <a class="btn bookhover btn-rounded waves-effect font-weight-bold btn-sm" href="./Idowu_Oluwatobi_Damilola_Resume.pdf" data-offset="90" style="color: #fff;" download="Idowu_Oluwatobi_Damilola_Resume.pdf">Download Resume</a>
+                    </li>
+                  </ul>
+              </ul>
+              <div class="hamburger">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+              </div>
+            </div>
+
+
+    </nav>
+      <!-- Navbar -->
+      <!-- Full Page Intro -->
+      <div class="view" style="
+          background-image: url('');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        ">
+        <!-- Mask & flexbox options-->
+        <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+          <!-- Content -->
+          <div class="container">
+            <!--Grid row-->
+            <div class="row mt-5">
+              <!--Grid column-->
+              <div class="col-md-7 mb-5 mt-md-0 mt-5 white-text text-center text-md-left">
+                <h1 class="h1-responsive font-weight-bold wow fadeInLeft Hero-top" style="padding-top: 18%;" data-wow-delay="0.3s"> First Do It, Then Do it Right, <br /> Then Do It Better. </h1>
+                <h4 class="mb-3 pt-4 pb-4 wow fadeInLeft" data-wow-delay="0.3s"> New design with clean <br>output , and reusable codes. </h4>
+
+
+
+                <!-- <div class="verified_customer_section  wow fadeInUp slow">
+                  <div class="image_review">
+                      <div class="customer_image">
+                          <img src="https://cdn.shopify.com/s/files/1/0664/2191/5900/t/8/assets/screenshot-20221121-alle-191353-1669054447602.png?v=1669054450" alt="customer image">
+                     </div>
+          
+                      <div class="customer_name_review_status">
+                          <div class="customer_name">Olivia Smith</div>
+                          <div class="customer_review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                          <div class="customer_status">
+                              <div class="customer_bage"> <img src="https://cdn.shopify.com/s/files/1/0566/8241/4246/t/11/assets/icon-verified-1662629893290.png?v=1662629894" alt=""> </div>
+                              <div class="customer_status_content">Verified Customer</div>
+                          </div>
+          
+                      </div>
+                  </div>
+          
+          
+                  <div class="customer_comment">"My little boy loves it! He used to spend hours watching videos on my phone, since we bought Drawing Projector all he does is drawing, it's like the phone never existed, I'm so happy!"</div>
+          
+              </div> -->
+
+              <div class="contenting">
+                <div class="Carder">
+                  <div class="firstinfo"><img src="./img/sampleimg.jpg"/>
+                    <div class="profileinfo">
+                      <div class="userinfo" style="color: #4285f4; text-align: left;">IDOWU OLUWATOBI DAMILOLA</div>
+                      <div class="skillinfo" style="text-align: left;">UI/UX DESIGNER&nbsp;|&nbsp;WEB DESIGNER</div>
+                      <!-- <p class="bio">Lived all my life on the top of mount Fuji, learning the way to be a Ninja Dev.</p> -->
+                    </div>
+                  </div>
+                </div>
+                <!-- python -->
+                <div class="badgescard"><span class="devicons devicons-codepen"></span><span class="devicons devicons-javascript_badge"></span><span class="devicons"></span><span class="devicons devicons-sass" style="padding-left: 5px;">  </span></div>
+              </div>
+
+
+              </div>
+              <!--Grid column-->
+             
+
+              <!--Grid column-->
+              <!-- --------  POINTER ARROW --- -->
+              <div class="arrow bounce bounce-arrow">
+                <i class="fa fa-angle-down fa-5x" aria-hidden="true"></i>
+              </div>
+
+              <!-- <div class="col-md-7 mb-5 mt-md-0 mt-5 text-md-left"> -->
+
+           <!-- </div> -->
+              <div class="col-md-5 col-xl-5 mb-4 mockup-display">
+                <!--Form-->
+                <div class=" wow fadeInRight Hero-right" data-wow-delay="0.3s" style="visibility: visible; animation-name: fadeInRight; animation-delay: 0.3s;margin-left: -85px;margin-right: -139px;">
+                  <img src="assets/img/gallery/Scene.png" class="img-fluid" alt="">
+                </div>
+                <!--/.Form-->
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+        </div>
+
+        
+        <!-- Content -->
+        <section id="section04" class="demo">
+          <h1>UI | UX DESIGN WITH #4</h1>
+          <a href="#section05">
+            <span></span>Scroll </a>
+        </section>
+      </div>
+      </div>
+      <!-- Mask & flexbox options-->
+      </div>
+      <!-- Full Page Intro -->
+    </header>
+    <!--Header-->
+
+
+    <!-- LOADING AREA START ===== -->
+    <div id="overlayer"></div><div class="loader"><svg  class="loadsvg" version="1.1" id="L7"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><path fill=" #4aaff9" d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3
+           c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z"><animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="2s" from="0 50 50" to="360 50 50" repeatCount="indefinite"></animateTransform></path><path fill=" #4aaff9" d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7
+           c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z"><animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s" from="0 50 50" to="-360 50 50" repeatCount="indefinite"></animateTransform></path><path fill=" #4aaff9" d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5
+           L82,35.7z"><animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="2s" from="0 50 50" to="360 50 50" repeatCount="indefinite"></animateTransform></path></svg></div></div>
+
+
+
+    <!-- Main -->
+    <main>
+      <!-- Our $249 cleaning package -->
+      <div class="bg-holder" style="background-image:url(assets/img/bg-img/by-its-default.svg);"></div>
+      <div class="section-B" style="background-color: #0b0d1b;">
+        <div class="container section-box pt-5 pb-5 px-5 ">
+          <!-- Section -->
+          <section>
+            <style>
+              /* Steps */
+              .step {
+                list-style: none;
+                margin: 0;
+              }
+
+              .step-element {
+                display: flex;
+                padding: 1rem 0;
+              }
+
+              .step-number {
+                position: relative;
+                width: 7rem;
+                flex-shrink: 0;
+                text-align: center;
+              }
+
+              .step-number .number {
+                color: #fff;
+                background-color: #00c851;
+                font-size: 1.5rem;
+              }
+
+              .step-number .number {
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+              }
+
+              .number {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: 38px;
+                border-radius: 10rem;
+              }
+
+              .step-number::before {
+                content: '';
+                position: absolute;
+                left: 50%;
+                top: 48px;
+                bottom: -2rem;
+                margin-left: -1px;
+                border-left: 2px dashed #eaeff4;
+              }
+
+              .step .step-element:last-child .step-number::before {
+                bottom: 1rem;
+              }
+            </style>
+            <h1 class="font-weight-bold text-center dark-grey-text pb-2 wow fadeInUp slow text-white"> DESIGN TOOLS </h1>
+            <hr class="w-header my-4" />
+            <div class="row align-items-center">
+              <div class="col-lg-6 col-md-6 mb-4 mb-md-0 wow fadeInLeft slow">
+                <!--Image-->
+                <div class="z-depth-1-half">
+                  <img src="assets/img/gallery/iPad-Pro-Design-Mockup.png" class="img-fluid" alt="" />
+                  <a href="#">
+                    <div class="mask rgba-white-light"></div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 mb-4 wow fadeInRight slow">
+                <p class="lead pl-5 text-muted pt-2 mb-5 designtoolinfo"> I provide almost any kind of solution on Web Design, Wordpress | Mobile App - including the use of supported Design Tools. </p>
+                <div class="row mt-5 justify-content-center justify-content-lg-start">
+                  <div class="col-md-5 col-10 hover-cardgroup bg-extra-1 mb-xl-4 mb-3 mr-xl-4 mr-md-3 mb-3">
+                    <div class="media align-items-center">
+                      <img class="img-fluid" src="assets/img/gallery/Figma.png" alt="" style="width: 44px;">
+                      <div class="card-body text-left">
+                        <a class="stretched-link" href="#!"></a>
+                        <p class="mb-0 font-weight-bold title text-white fs-xl-0 fs-lg--1 fs-0">Figma</p>
+                        <p class="text-500 mb-0 subtitle fs-xl-0 fs-lg--1 fs-0">creative tools</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5 col-10 hover-cardgroup bg-extra-1 mb-xl-4 mb-3 mr-xl-4 mr-md-3 mb-3">
+                    <div class="media align-items-center">
+                      <img class="img-fluid" src="assets/img/gallery/adobe-xd-2 logo.png" alt="" style="width: 70px;">
+                      <div class="card-body text-left">
+                        <a class="stretched-link" href="#!"></a>
+                        <p class="mb-0 font-weight-bold title text-white fs-xl-0 fs-lg--1 fs-0">AdobeXD</p>
+                        <p class="text-500 mb-0 subtitle fs-xl-0 fs-lg--1 fs-0">creative tools</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="more-update font-weight-bold text-info mt-4 ml-1">
+                  <a class="text-decoration-none moreupdate" href="#!">View all Designs Coming Up 
+                    <svg class="svg-inline--fa fa-arrow-right fa-w-14" data-fa-transform="down-2 right-4" aria-hidden="true" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="" style="transform-origin: 0.6875em 0.625em;">
+                        <g transform="translate(224 256)">
+                          <g transform="translate(128, 64)  scale(1, 1)  rotate(0 0 0)">
+                            <path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z" transform="translate(-224 -256)"></path>
+                          </g>
+                        </g>
+                      </svg>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </section>
+          <!-- Section -->
+        </div>
+      </div>
+      <!-- Our $249 cleaning package -->
+      <!-- Why should you do it -->
+      <!-- <div class="pt-5 pb-5 mt-5 wow fadeInUp" style="background-color: rgb(11, 13, 27);">
+
+      </div> -->
+      <!-- Why should you do it-->
+      <!-- ABOUT US -->
+      <div id="about" style="background-color: #0b0d1b;">
+        <div class="container pt-5 mt-5 pb-5">
+          <!-- Section -->
+          <section>
+            <h3 class="font-weight-bold text-center dark-grey-text pt-5 pb-2 wow fadeInDown slow"> ABOUT ME </h3>
+            <hr class="w-header my-4" />
+            <p class="lead text-center font-weight-bolder text-muted pt-2 mb-5"> New Generation Digital Product Designer. <br>Freelancer to any gigs on Digital Experience. </p>
+            <div class="row">
+              <div class="col-md-6 col-xl-3 mb-4 wow fadeInLeft slow">
+                <div class="card text-center bg-success text-white step-number-block">
+                  <div class="card-body">
+                    <p class="mt-4 pt-2">
+                      <i class="fa fa-search fa-4x"></i>
+                    </p>
+                    <h5 class="font-weight-normal my-4 py-2">
+                      <a class="text-white">User Research</a>
+                    </h5>
+                    <p class="mb-4">Design Validation through Usability Testing </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-3 mb-4 wow fadeInUp slow">
+                <div class="card text-center bg-succ step-number-block">
+                  <div class="card-body">
+                    <p class="mt-4 pt-2">
+                      <i class="fas  fa fa-bolt fa-4x white-text"></i>
+                    </p>
+                    <h5 class="font-weight-normal my-4 py-2">
+                      <a class="dark-grey-text">Strategy</a>
+                    </h5>
+                    <p class="text-muted pt-2 pb-3 mb-4">Strategic Goals for evolving ideas into successful app. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-3 mb-4 wow fadeInUp slow">
+                <div class="card text-center bg-succ lighten-1 text-white step-number-block">
+                  <div class="card-body">
+                    <p class="mt-4 pt-2">
+                      <i class="fas fa-history fa-4x white-text"></i>
+                    </p>
+                    <h5 class="font-weight-normal my-4 py-2">
+                      <a class="text-white">On Time</a>
+                    </h5>
+                    <p class="pt-2 pb-3 mb-4"> You can count on me: on time, every time. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-3 wow fadeInUp slow">
+                <div class="card text-center bg-succ step-number-block">
+                  <div class="card-body">
+                    <p class="mt-4 pt-2">
+                      <i class="fa fa-home  fa-4x white-text"></i>
+                    </p>
+                    <h5 class="font-weight-normal my-4 py-2">
+                      <a class="dark-grey-text">Work at Home</a>
+                    </h5>
+                    <p class="text-muted pt-2 pb-3 mb-4"> Freelancer </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div id="hire" class="mt-5 pt-5 pb-5">
+                <section class="dark-grey-text text-center"  >
+                  <!-- Section heading -->
+                  <h3 class="font-weight-bold mb-4 pb-2" id="hire"> Am Excited To Work With You! </h3>
+                  <div class="container">
+                    <!-- ------------------------------------ -->
+                    <a type="button" class="btn bton open_modal" id="open_modal" href="#hire"> Hire me </a>
+                  </div>
+                  <!-- Grid row -->
+                </section>
+              </div>
+               
+          </section>
+            </div>
+
+          <!-- Section -->
+        </div>
+      </div>
+
+
+      <!-- =========== HIRE MODAL ========== -->
+      <div class="login-popup popup-contain">
+        <div class="box popup-modal modal-pop">
+          <div class="learnmore" style="margin: auto;font-size: 12px;">  
+            <div class="close-btn btn-closed" style="cursor: pointer;">&times;</div>
+            <div class="content-info">
+                <div class="carder-info" style="background-color: #fff;">
+                  <div class="profile-first-info"><img src="./img/sampleimg.jpg" class="sam">
+                    <div class="profile-info">
+                      <div class="user-info" style="color: #000; text-align: center;">IDOWU OLUWATOBI DAMILOLA</div>
+                      <div class="skill-info" style="text-align: center;">UI/UX DESIGNER&nbsp;|&nbsp;WEB DESIGNER&nbsp;| WORDPRESS</div>
+                      <p class="bio">Digital Product Designer, and a behavior Researcher that Aim to achieve Digital expectation.<br>UI/UX Designer with 2+ years of Experiences - Web design, and Mobile App - IOS & ANDROID.</p>
+                      <div class="connect_with_me"><h4>HIRE ME&nbsp;:</h4>
+                        <div class="social_connect_container">
+                          <ul class="social-menu">
+                            <li class="social-item"><a href="mailto:it.daconceptofficial@gmail.com
+                              "><img src="./img/all-starks/Gmail.svg" alt="" width="50" height="50"></a></li>
+                            <li class="social-item"><a href="https://join.skype.com/invite/EKC95dDe9fBW"><img src="./img/all-starks/Skype.svg" alt="" width="50" height="50"></a></li>
+                            <li class="social-item"><a href="https://twitter.com/iT_daconcept"><img src="./img/all-starks/Twitter logo.svg" alt="" width="50" height="50"></a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="Starks"><h6>STARKS&nbsp;:</h6>
+                        <ul class="stark-menu">
+                          <li class="stark-item"><img src="./img/all-starks/figma-icon.svg" alt="Figma"></li>
+                          <li class="stark-item"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" style="" alt=""></li>
+                          <li class="stark-item"><img src="./img/all-starks/html-5 logo.svg" alt="" width="64" height="64"></li>
+                          <li class="stark-item"><img src="./img/all-starks/Adobe logo.svg" alt="" width="64" height="64"></li>
+                          <!-- <li class="stark-item">GIT</li>
+                          <li class="stark-item">WORDPRESS</li> -->
+                        </ul>
+                      </div>
+                    </div>
+                      
+
+                  </div>
+                </div>
+              </div>
+            <div> 
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ======= MODAL ENDS HERE ========== -->
+
+
+
+
+      <!-- ABOUT US -->
+      <!-- Don’t take our word for it -->
+      <div class="pt-5 pb-5 mt-5" style="background-color:  #0b0d1b;">
+        <!--Section 3: Content-->
+        <!--Section: Content-->
+      </div>
+      <!-- Don’t take our word for it -->
+      <!-- Additional Services -->
+      <div id="services" class="mt-5 pt-5 pb-5" style="background-color: #0b0d1b;">
+        <div class="container mt-5">
+          <!--Section: Content-->
+          <section class="dark-grey-text text-center">
+            <!-- Section heading -->
+            <h2 class="font-weight-bold mb-4 pb-2 wow fadeInUp slow" style="color: #E3DDE0;"> PROJECT DESIGNS </h2>
+            <!-- Section description -->
+            <p class="text-center font-weight-bolder mx-auto w-responsive mb-5 wow fadeInLeft slow"> it's easy to make Layout with ease and using the Grid System, <br> - To achieve goals instantly. </p>
+            <!-- Grid row -->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp slow">
+                <!-- Featured image -->
+                <div class="rounded z-depth-2 mb-4">
+                  <img class="img-fluid" src="" alt="Sample image" style="height: 200px;" />
+                  <a>
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <!-- Category -->
+                <!-- Post title -->
+                <h6 class="font-weight-bold mb-3">
+                  <strong>UX DESIGNER WITH ...</strong>
+                </h6>
+              </div>
+              <!-- Grid column -->
+              <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp slow">
+                <!-- Featured image -->
+                <div class="rounded z-depth-2 mb-4">
+                  <img class="img-fluid" src="" alt="Sample image" style="width: 100%; height: 200px;" />
+                  <a>
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <!-- Category -->
+                <!-- Post title -->
+                <h6 class="font-weight-bold mb-3">
+                  <strong>BANK PLATFORM CONCEPT APPLICATION</strong>
+                </h6>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp slow">
+                <!-- Featured image -->
+                <div class="rounded z-depth-2 mb-4">
+                  <img class="img-fluid" src="" alt="Sample image" style="height: 200px;" />
+                  <a>
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <!-- Category -->
+                <!-- Post title -->
+                <h6 class="font-weight-bold mb-3">
+                  <strong>PRODUCT SCHOOL</strong>
+                </h6>
+              </div>
+              <!-- Grid column -->
+              <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp slow">
+                <!-- Featured image -->
+                <div class="rounded z-depth-2 mb-4">
+                  <img class="img-fluid" src="" alt="Sample image" style="height: 200px; width: 100%;" />
+                  <a>
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <!-- Category -->
+                <!-- Post title -->
+                <h6 class="font-weight-bold mb-3">
+                  <strong>STANBIC BANK - REDESIGN</strong>
+                </h6>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp slow">
+                <!-- Featured image -->
+                <div class="rounded z-depth-2 mb-4">
+                  <img class="img-fluid" src="" alt="Sample image" style="width: 100%; height: 200px;" />
+                  <a>
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <!-- Category -->
+                <!-- Post title -->
+                <h6 class="font-weight-bold mb-3">
+                  <strong>MOBILE APP FOR TRANSPORT CARDS</strong>
+                </h6>
+              </div>
+            </div>
+            <!-- Grid row -->
+          </section>
+          <!--Section: Content-->
+        </div>
+      </div>
+      <!-- Additional Services -->
+      <!-- THE CLEAN AIR DUCT DIFFERENCE -->
+      <!-- THE CLEAN AIR DUCT DIFFERENCE -->
+      <!-- Our pricing plans -->
+      <!-- Our pricing plans -->
+      <!-- Testimonials -->
+      <!-- Testimonials -->
+      <!-- OUR CLIENTS -->
+      <!-- OUR CLIENYS -->
+    </main>
+    <!-- BUTTON TOP START -->
+    <!-- Scroll function element -->
+    <button class="scroll">
+      <i class="fas fa-sort-up fa-3x"></i>
+    </button>
+    <!-- End scroll function element -->
+    <!-- Main -->
+    <footer class="page-footer pt-5 unique-color-dark">
+      <!-- Footer Links -->
+      <div class="container text-center">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-6 mx-auto text-md-left">
+            <!-- Links -->
+            <!-- <h5 class="font-weight-bolder text-uppercase mt-3 mb-4" style="color: #00c851;">
+            iT_Daconcept
+          </h5> -->
+            <p class="font-weight-bolder" style="font-family: SFMono-Regular,Menlo,Monaco,Consolas,&quot;Liberation Mono&quot;,&quot;Courier New&quot;,monospace;"> Design, Build,&nbsp;and Deliver. </p>
+            <ul class="list-unstyled" id="contactus">
+              <li class="pb-2">
+                <p class="font-weight-bolder">CONTACT ME&nbsp;&nbsp;: </p>
+              </li>
+            </ul>
+            <ul class="menu-item">
+              <li class="menu-list">
+                <a href="" class="menu-link" style="text-decoration: none;">
+                  <svg class="svg-inline--fa fa-map-marker fa-w-12 mr-3 mt-1 text-warning" data-fa-transform="down-2" aria-hidden="true" data-prefix="fas" data-icon="map-marker" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="" style="transform-origin: 0.375em 0.625em;width: 14px;height: 32px;position: relative;top: 6px;">
+                    <g transform="translate(192 256)">
+                      <g transform="translate(0, 64)  scale(1, 1)  rotate(0 0 0)">
+                        <path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0z" transform="translate(-192 -256)"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  <!-- <span class="fab fa-twitter fa-inverse" style="width: 19px; height: 19px; color: #5a45ff; margin-right: 10px;"></span> -->Work From Home </a>
+              </li>
+              <li class="menu-list">
+                <a href="mailto:ih.tconcept@gmail.com" class="menu-link" style="text-decoration: none;">
+                  <svg class="svg-inline--fa fa-envelope fa-w-16 mr-3 mt-1 text-warning" style="width: 19px; height: 19px; color: #4285f4 ; margin-right: 10px;position:relative;top:0px;" data-fa-transform="down-2" aria-hidden="true" data-prefix="fas" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="" style="transform-origin: 0.5em 0.625em;">
+                    <g transform="translate(256 256)">
+                      <g transform="translate(0, 64)  scale(1, 1)  rotate(0 0 0)">
+                        <path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" transform="translate(-256 -256)"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  <!-- <span class="fab fa-twitter fa-inverse" style="width: 19px; height: 19px; color: #5a45ff; margin-right: 10px;"></span> -->it.daconceptofficial@gmail.com </a>
+              </li>
+              <li class="menu-list">
+                <a href="https://twitter.com/iT_daconcept" class="menu-link" style="text-decoration: none;">
+                  <svg class="svg-inline--fa fa-twitter fa-w-16 fa-inverse" style="width: 19px; height: 19px; color: #4285f4 ; margin-right: 10px;position: relative;top: 4px;" aria-hidden="true" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                    <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                  </svg>
+                  <!-- <span class="fab fa-twitter fa-inverse" style="width: 19px; height: 19px; color: #5a45ff; margin-right: 10px;"></span> -->@iT_daconcept </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+          <hr class="clearfix w-100 d-md-none" />
+          <hr class="clearfix w-100 d-md-none" />
+          <!-- Grid column -->
+          <div class="col-md-6 mx-auto">
+            <!-- <ul class="list-unstyled"><li class="pb-2"><a class="font-weight-bolder fotterhover" href="#home">HOME</a></li><li class="pb-2"><a class="font-weight-bolder fotterhover" href="#about">ABOUT ME</a></li><li class="pb-2"><a class="font-weight-bolder fotterhover" href="#services">PROJECT</a></li></ul> -->
+          </div>
+          <!-- Grid column -->
+          <hr class="clearfix w-100 d-md-none" />
+          <!-- Grid column -->
+          <!-- <div class="col-md-4 col-sm-12 mx-auto"><div class="px-5"><form action="index.php" method="POST" class="input-group"><ul class="list-unstyled newsletter"><li class=""><div class="md-form md-outline form-lg mb-0"><input
+                        type="email"
+                        required=""
+                        class="white form-control form-control-lg"
+                        name="signupemail"
+                        placeholder="Email address"
+                        aria-label="Your email"
+                      /></div><button
+                      name="signup_btn"
+                      type="submit"
+                      class="sbbtn btn btn-block btn-lg waves-effect waves-light"
+                    >
+                      SUBSCRIBE
+                    </button></li></ul></form></div></div> -->
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-12 pt-5">
+            <div class="flex-center">
+              <!-- Facebook -->
+              <!-- <a class="fb-ic"><i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"></i></a> -->
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+              </a>
+              <!-- Google +-->
+              <!-- <a class="gplus-ic"><i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"></i></a> -->
+              <!--Linkedin -->
+              <a class="li-ic">
+                <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+              </a>
+              <!--Instagram-->
+              <!-- <a class="ins-ic"><i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"></i></a> -->
+              <!--Pinterest-->
+              <a class="pin-ic">
+                <i class="fab fa-pinterest fa-lg white-text fa-2x"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+      <!-- Copyright -->
+      <div class="footer-copyright text-center pb-5 py-3 unique-color-dark">
+        <!-- <hr class="site-footer__hr" /> -->
+        <div class="col-lg-12 pt-4 text-white">
+          <!-- <a href="#" class="fotterhover">iT_daconcept</a> -->
+          <!-- <a href="#" class="fotterhover">Powered by </a> -->
+          <div class="container">
+            <h2 class="quotes">More updates coming up soon...</h2>
+            <!--   <h2 class="quotes">second quote</h2><h2 class="quotes">3rd quote</h2><h2 class="quotes">4th quote</h2><h2 class="quotes">5th quote</h2><h2 class="quotes">6th quote</h2> -->
+          </div>
+        </div>
+        <div class="row notifyupdate"></div>
+        <div class="row">
+          <div class="col-lg-12 pt-4 text-white Copyrightinfo"> Copyright © 2022, <a href="#" class="fotterhover">iT_daconcept&nbsp;</a> .&nbsp;All Right Reserve
+            <!-- <a href="#" class="fotterhover">Powered by </a> -->
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <!-- <script type="text/javascript" src="js/popper.min.js"></script> -->
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript">
+      $(function() {
+        new WOW().init();
+        // Add smooth scrolling to all links
+        $('a').on('click', function(event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== '') {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+            // Store hash
+            var hash = this.hash;
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top,
+            }, 800, function() {
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+    </script>
+    <script>
+      // Bouncing arrow bottom of full screen
+      // Different arrow choices from Font Awesome
+      // Fades away as you scroll down
+      $(window).scroll(function() {
+        $(".arrow").css("opacity", 1 - $(window).scrollTop() / 250);
+        //250 is fade pixels
+      });
+    </script>
+    <!-- -------------- LOADING ------------- -->
+    <script>
+      jQuery(document).ready(function($) {
+        "use strict";
+        $(".loader").delay(1000).fadeOut("slow");
+        $("#overlayer").delay(1000).fadeOut("slow");
+      });
+    </script>
+    <!-- ----------------- END ------------- -->
+    <script>
+      // > page scroll top on button click function by = custom.js ===================== //
+      function scroll_top() {
+        jQuery("button.scroltop").on('click', function() {
+          jQuery("html, body").animate({
+            scrollTop: 0
+          }, 1000);
+          return false;
+        });
+        jQuery(window).on("scroll", function() {
+          var scroll = jQuery(window).scrollTop();
+          if (scroll > 900) {
+            jQuery("button.scroltop").fadeIn(1000);
+          } else {
+            jQuery("button.scroltop").fadeOut(1000);
+          }
+        });
+      }
+    </script>
+    <script>
+      (function() {
+        var quotes = $(".quotes");
+        var quoteIndex = -1;
+
+        function showNextQuote() {
+          ++quoteIndex;
+          quotes.eq(quoteIndex % quotes.length).fadeIn(2000).delay(2000).fadeOut(2000, showNextQuote);
+        }
+        showNextQuote();
+      })();
+    </script>
+    <!-- JAVASCRIPT  FILES ========================================= -->
+    <script>
+      const btn = document.querySelector('.scroll');
+      btn.addEventListener('click', function() {
+        scroll(0, 200);
+      })
+      window.onscroll = function showHide() {
+        if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+          btn.style.transform = 'scale(1)';
+        } else {
+          btn.style.transform = 'scale(0)';
+        }
+      }
+
+      function scroll(target, duration) {
+        if (duration <= 0) {
+          return
+        };
+        let difference = target - document.documentElement.scrollTop;
+        let speed = difference / duration * 10;
+        setTimeout(function() {
+          document.documentElement.scrollTop += speed;
+          if (document.documentElement.scrollTop == target) {
+            return
+          };
+          scroll(target, duration - 10);
+        }, 10);
+      }
+    </script>
+
+<!-- ====== NAVBAR  -->
+<SCript>
+  const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}))
+</SCript>
+
+<!-- =======   NAV END HERE ========= -->
+
+
+<script>
+    const loginPopup = document.querySelector(".login-popup");
+    const close = document.querySelector(".close-btn");
+    const bton = document.getElementById('open_modal');
+
+  
+    bton.addEventListener("click",function(){
+      // buttonElement.addEventListener('click', function (event) {
+     showPopup();
+     // setTimeout(function(){
+     //   loginPopup.classList.add("show");
+     // },5000)
+  
+    })
+  
+    function showPopup(){
+          const timeLimit = 5 // seconds;
+          let i=0;
+          const timer = setInterval(function(){
+           i++;
+           if(i == timeLimit){
+            clearInterval(timer);
+            loginPopup.classList.add("show");
+           } 
+           console.log(i)
+          },200);
+    }
+  
+  
+    close.addEventListener("click",function(){
+      loginPopup.classList.remove("show");
+    })
+  
+</script>
+  </body>
+</html>

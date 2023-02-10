@@ -1,0 +1,604 @@
+.menu-item, .menu-list { list-style-type: none!important;padding-left: 0px; text-decoration: none;margin-bottom: 15px; color: #9397a1;}
+.menu-link{color: #a1a5af;}
+.nav-item {padding-left: 0px;}
+.list-unstyled, li, a {text-decoration: none!important;}
+
+
+.hover-cardgroup {
+-webkit-transition:all .2s ease-in-out;
+-o-transition:all .2s ease-in-out;
+transition:all .2s ease-in-out;
+border-radius:12px
+}
+.hover-cardgroup:focus,
+.hover-cardgroup:hover {
+background-color:#fff!important;
+-webkit-box-shadow:0 5px 24px rgba(255,255,255,.32);
+box-shadow:0 5px 24px rgba(255,255,255,.32)
+}
+.hover-cardgroup:focus .title,
+.hover-cardgroup:hover .title {
+color:#1b1e33!important
+}
+.hover-cardgroup:focus .subtitle,
+.hover-cardgroup:hover .subtitle {
+color:#414450
+}
+
+.bg-extra-1 {
+background-color:#1b1e33!important
+}
+a.bg-extra-1:focus,
+a.bg-extra-1:hover,
+button.bg-extra-1:focus,
+button.bg-extra-1:hover {
+background-color:#090a12!important
+}
+.mr-xl-4,
+.mx-xl-4 {
+margin-right:1.8rem!important
+}
+
+.mb-xl-4,
+.my-xl-4 {
+margin-bottom:1.8rem!important
+}
+.mb-3,
+.my-3 {
+margin-bottom:1rem!important
+}
+.mr-md-3,
+.mx-md-3 {
+margin-right:1rem!important
+}
+
+.text-white {
+color:#fff!important;
+line-height: 1.4;
+}
+a.text-white:focus,
+a.text-white:hover {
+color:#d9d9d9!important
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-bottom:.5rem;
+font-family:Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+font-weight:500;
+line-height:1.2;
+color:#fff
+}
+.text-500 {
+color:#b6b9c0!important
+}
+a.text-500:focus,
+a.text-500:hover {
+color:#8d929d!important
+}
+
+.bg-holder {
+position: absolute;
+width: 100%;
+min-height: 100%;
+top: 0;
+left: 0;
+background-size: cover;
+background-position: center;
+overflow: hidden;
+will-change: transform,opacity,filter;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+background-repeat: no-repeat;
+z-index: 0;
+}
+.text-info {
+color:#4aaff9!important
+}
+a.text-info:focus,
+a.text-info:hover {
+color:#088def!important
+}
+
+svg:not(:root).svg-inline--fa {
+overflow: visible;
+}
+.svg-inline--fa.fa-w-14 {
+width: .875em;
+}
+.svg-inline--fa {
+display: inline-block;
+font-size: inherit;
+height: 1em;
+overflow: visible;
+vertical-align: -.125em;
+}
+
+/*======================================
+48. HOW iT WORK
+======================================*/
+.step-number-block {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.step-number-block:hover {
+    z-index: 1;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.step-number {
+    position: absolute;
+    right: 24px;
+    top: 0px;
+    font-size: 72px;
+    font-weight: 800;
+    color: #e2e2e2;
+}
+
+.step-number.active {
+    color: #3a4452;
+}
+
+
+
+
+/*-------------------------------------
+	6. scroll top btn css
+-------------------------------------*/
+button.scroltop {
+    height: 90px;
+    width: 90px;
+    background: transparent !important;
+    border: 0;
+    position: fixed;
+    right: 10px;
+    bottom: 100px;
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    display: none;
+    outline: none;
+
+
+    text-align: center;
+    z-index: 999;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+button.scroltop span {
+    display: block;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.string {
+
+    position: relative;
+}
+
+#btn-vibrate {
+    animation: vibrate 2s linear 0s infinite;
+    -moz-animation: vibrate 2s linear 0s infinite;
+    /* Firefox */
+    -webkit-animation: vibrate 2s linear 0s infinite;
+    /* Safari and Chrome */
+    -o-animation: vibrate 2s linear 0s infinite;
+    /* Opera */
+}
+
+@keyframes vibrate {
+    0% {
+        top: 0px;
+    }
+    25% {
+        top: -3px;
+    }
+    50% {
+        top: 0px;
+    }
+    75% {
+        top: 3px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+/* Firefox */
+@-moz-keyframes vibrate {
+    0% {
+        top: 0px;
+    }
+    25% {
+        top: -3px;
+    }
+    50% {
+        top: 0px;
+    }
+    75% {
+        top: 3px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes vibrate {
+    0% {
+        top: 0px;
+    }
+    25% {
+        top: -3px;
+    }
+    50% {
+        top: 0px;
+    }
+    75% {
+        top: 3px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+/* Opera */
+@-o-keyframes vibrate {
+    0% {
+        top: 0px;
+    }
+    25% {
+        top: -3px;
+    }
+    50% {
+        top: 0px;
+    }
+    75% {
+        top: 3px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    button.scroltop {
+        font-size: 7px;
+        height: 30px;
+        width: 30px;
+        line-height: 16px;
+    }
+
+    button.scroltop span {
+        font-size: 20px;
+        line-height: 10px;
+    }
+
+
+      .arrow {
+    
+      
+        position: relative!important;
+        bottom: 0;
+        left: 50%;
+        margin-left: -20px;
+        width: 40px;
+        height: 60px;
+      
+      }
+    
+
+      .badgescard {
+
+        text-align: left;
+      }
+
+      .bounce-arrow {
+
+        bottom: 12px!important;
+      }
+
+      .mockup-display {
+        margin-bottom: -15%!important;
+      }
+
+      .section-B {
+        margin-top: 125px;
+      }
+
+
+    
+}
+
+/* #LOADING-SECTION */
+
+.preloader {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 99999;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.signal {
+    border: 5px solid #ffb400;
+    border-radius: 30px;
+    height: 30px;
+    left: 50%;
+    margin: -15px 0 0 -15px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    animation: pulsate 1s ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(0.1);
+        opacity: 0.0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+
+
+/*-------------------------------------
+	18. Loading
+-------------------------------------*/
+
+
+#overlayer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 7100;
+    background: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; } 
+  
+   .loader {
+    z-index: 7700;
+    position: fixed;
+    top: 50%;
+    left: 48%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);}
+
+
+*,html{margin:0;padding:0}
+
+    body{
+      background: #000;
+      text-align: center;
+}
+
+.loadsvg{
+    
+      width: 70px;
+      height: 70px;
+      margin: 20px;
+      display:inline-block;
+}
+    
+
+
+
+.bg-succ{
+
+    background-color: #0a09095c;
+}
+
+.bg-succ:hover {
+
+    background-color: #088def;
+}
+
+
+.quotes {display: none; font-size: 15px;font-weight: lighter; color: #088def;}
+
+
+.starks {
+
+  text-align: center;
+}
+
+.stark-content {
+
+  display: inline-block;
+}
+
+/* ==========  DOWN BOUNCE ARROW =========== */
+
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+i {
+  display: block;
+  color: rgb(255, 255, 255);
+}
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 60px; /*change with size of arrow to make sit on bottom */
+/*   background-image: url(); */
+/*   background-size: contain; */
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+/* ----- close modal botton  */
+
+.close-btn {
+  
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5;
+  position: relative;
+  top: -5px!important;
+  left: 25px!important;
+}
+
+
+
+/* ============ SCROLL UP ELEMENT ============ */
+  /* Scroll function element */
+.scroll {
+  position: fixed;
+  bottom: 125px;
+  right: 25px;
+  width: 70px;
+  height: 70px;
+  border: none;
+  transition: all 150ms ease;
+  transform: scale(0);
+	outline: none;
+	cursor: pointer;
+  background-color: transparent;
+}
+.scroll:focus {
+  outline: none;
+}
+
+.fa-sort-up {
+  color: #088def;
+  margin-top: 15px;
+}
+
+.scroll:hover .fa-sort-up {
+  animation: jump 800ms infinite;
+}
+
+@keyframes jump {
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* End scroll function element */
+
+
+@media screen and (max-width: 1300px) {
+	.container {
+		width: 100%;
+	}
+	.container h1 {
+		font-size: 26px !important;
+    margin-top: 50px;
+
+	}
+	.fa-sort-up {
+  animation: jump 800ms infinite;
+  }
+
+  .nav-resume {
+    position: relative;
+    left: 20%;
+  }
+}
+
+
+@media screen and (max-width: 1024px){
+
+  .nav-resume {
+    position: relative;
+    left: 15%;
+  }
+
+} 
